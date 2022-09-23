@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Stretch-Pro;
+    src: url(Static/Fonts/StretchPro.otf);
+}
+
+@font-face {
+    font-family: Mont-Mono;
+    src: url(Static/Fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mont-SB;
+    src: url(Static/Fonts/Montserrat-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: Mont-Black;
+    src: url(Static/Fonts/Montserrat-Black.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --dark-text-color: #000;
+    --c-green-color: #A0FF01;
+    --c-light-grey-color: #C1C1C1;
+    --bg-color: #EFEFEF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Mont-Mono;
+    color: var(--dark-text-color);
+}
+
+/* <!------------------------- START -- ACTIVITY ONE ------------------------> */
+.container-fluid {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color) !important;
+    background-image: url(Static/Imgs/bg.svg);
+}
+
+.act-one h1{
+    font-family: Stretch-Pro;
+    font-size: 3.5rem;
+    padding-bottom: 4.5rem;
+    line-height: 3.5rem;
+    color: var(--dark-text-color);
+} 
+
+input[type=text]{
+    border-color: var(--c-light-grey-color);
+    border-width: 4px;
+    border-radius: 0;
+    background-color: var(--bg-color) !important;
+}
+
+.employee-sal p{
+    font-family: Mont-Mono;
+    font-size: 1.25rem;
+}
+
+.input-group{
+    width: 400px !important;
+    height: 50px;
+}
+
+.calculated-net p{
+    font-family: Mont-SB;
+    font-size: 1.4rem;
+}
+
+.calculated-net h2{
+    font-family: Mont-Black;
+    font-size: 5rem;
+}
+.btn-primary{
+    font-family: Stretch-Pro !important;
+    font-size: 1.05rem !important;
+    color: var(--dark-text-color) !important;
+    padding: 0.7rem 1rem 0.7rem  !important;
+    background-color: var(--c-green-color) !important;
+    border-style: none !important;
+    border-radius: 0 !important;
+}
+
+.btn-primary:hover{
+    background-color: var(--dark-text-color) !important;
+    color: var(--c-green-color) !important;
+}
+
+.form-control:focus {
+    border-color: #B5E466 !important;
+    box-shadow: 0 0 0 0.2rem rgba(204, 238, 212, 0.25) !important;
+} 
+
+/* <!------------------------- END -- ACTIVITY ONE ------------------------> */
